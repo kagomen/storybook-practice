@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 export default {
   content: [
@@ -6,6 +6,8 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  // Toggle dark-mode based on .dark class or data-mode="dark"
+  darkMode: ["class", '[data-mode="dark"]'],
   theme: {
     extend: {
       colors: {
@@ -15,4 +17,4 @@ export default {
     },
   },
   plugins: [],
-} satisfies Config;
+} satisfies Config
