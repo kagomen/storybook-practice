@@ -2,6 +2,8 @@
 
 Next.js、shadcn/ui（Tailwind CSS） という構成で Storybook を使ってみる
 
+https://zenn.dev/masatotezuka/articles/strorybook_nextjs_beginner
+
 ## 環境構築
 
 ### shadcn/ui のセットアップ
