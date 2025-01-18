@@ -1,10 +1,27 @@
 ## 概要
 
-Next.js、Tailwind CSS という構成で Storybook を使ってみる
+Next.js、shadcn/ui（Tailwind CSS） という構成で Storybook を使ってみる
 
 ## 環境構築
 
-### インストール・セットアップ
+### shadcn/ui のセットアップ
+
+- https://ui.shadcn.com/docs/installation/next
+- https://ui.shadcn.com/docs/react-19
+
+```
+npx shadcn@latest init -d
+```
+
+CLI で問われたら`--legacy-peer-deps`を選択する
+
+```
+npx shadcn@latest add button
+```
+
+### Storybook のインストール・セットアップ
+
+https://storybook.js.org/docs/get-started/frameworks/nextjs
 
 ```
 npx storybook@latest init
@@ -19,7 +36,7 @@ npm storybook@latest init
 
 ### Tailwind のセットアップ
 
-https://storybook.js.org/recipes/tailwindcss#2-provide-tailwind-to-stories
+参考: https://storybook.js.org/recipes/tailwindcss#2-provide-tailwind-to-stories
 
 ```ts
 // .storybook/preview.js
