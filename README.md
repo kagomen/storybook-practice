@@ -2,11 +2,13 @@
 
 Next.js、shadcn/ui（Tailwind CSS） という構成で Storybook を使ってみる
 
-https://zenn.dev/masatotezuka/articles/strorybook_nextjs_beginner
+ref: https://zenn.dev/masatotezuka/articles/strorybook_nextjs_beginner
 
-## 環境構築
+## install/setup
 
-### shadcn/ui のセットアップ
+### shadcn/ui
+
+ref:
 
 - https://ui.shadcn.com/docs/installation/next
 - https://ui.shadcn.com/docs/react-19
@@ -21,9 +23,11 @@ CLI で問われたら`--legacy-peer-deps`を選択する
 npx shadcn@latest add button
 ```
 
-### Storybook のインストール・セットアップ
+### Storybook
 
-https://storybook.js.org/docs/get-started/frameworks/nextjs
+#### install
+
+ref: https://storybook.js.org/docs/get-started/frameworks/nextjs
 
 ```
 npx storybook@latest init
@@ -36,9 +40,40 @@ npm config set legacy-peer-deps true --location project
 npm storybook@latest init
 ```
 
-### Tailwind のセットアップ
+#### setup
 
-参考: https://storybook.js.org/recipes/tailwindcss#2-provide-tailwind-to-stories
+```ts
+// ref: https://storybook.js.org/docs/get-started/frameworks/nextjs#set-nextjsappdirectory-to-true
+
+// .storybook/preview.ts
+
+const preview: Preview = {
+  // ...
+  parameters: {
+    // ...
+    nextjs: {
+      appDirectory: true,
+    },
+  },
+}
+```
+
+```ts
+// ref: https://storybook.js.org/docs/get-started/frameworks/nextjs#react-server-components-rsc
+
+// .storybook/main.ts
+
+const config: StorybookConfig = {
+  // ...
+  features: {
+    experimentalRSC: true,
+  },
+}
+```
+
+#### for Tailwind
+
+ref: https://storybook.js.org/recipes/tailwindcss#2-provide-tailwind-to-stories
 
 ```ts
 // .storybook/preview.js
