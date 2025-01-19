@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import { ExampleButton } from "./ExampleButton"
+import { SampleButton } from "./SampleButton"
 
 // import { action } from "@storybook/addon-actions"
 
-const meta: Meta<typeof ExampleButton> = {
-  title: "Components/Sample/ExampleButton",
-  component: ExampleButton,
+const meta: Meta<typeof SampleButton> = {
+  title: "Components/Sample/SampleButton",
+  component: SampleButton,
   tags: ["autodocs"],
   parameters: {
     layout: "centered",
