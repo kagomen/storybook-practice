@@ -4,9 +4,9 @@ type Product = {
   description: string
 }
 
-type ProductArray = Product[]
+type Products = Product[]
 
-export function Presentational({ products }: { products: ProductArray }) {
+export function Presentational({ products }: { products: Products }) {
   return (
     <div>
       {products.map((product) => {
