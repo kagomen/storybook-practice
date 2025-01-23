@@ -1,5 +1,7 @@
 export async function ServerComponent() {
-  console.log("hogehoge")
-  await new Promise((resolve) => setTimeout(resolve, 2000))
-  return <div>データが読み込まれました</div>
+  // console.log("hoge")
+  // await new Promise((resolve) => setTimeout(resolve, 2000))
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos/1")
+  const data = await res.json()
+  return <div>{data.title}</div>
 }
