@@ -9,7 +9,8 @@
     "lint": "next lint",
     "sb": "storybook dev -p 6006",
     "build-sb": "storybook build",
-    "scaffdog": "scaffdog generate"
+    "scaffdog": "scaffdog generate",
+    "plop": "plop"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",
@@ -39,6 +40,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
     "eslint-plugin-storybook": "^0.11.2",
+    "plop": "^4.0.1",
     "postcss": "^8",
     "scaffdog": "^4.1.0",
     "storybook": "^8.5.0",
