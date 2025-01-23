@@ -100,3 +100,14 @@ npx storybook@latest add @storybook/addon-themes
 ```
 
 data-attributes を選択したら型エラーが発生したので、今回は class を選択
+
+### Scaffdog
+
+```
+npm i -D scaffdog
+npx scaffdog init
+```
+
+`.scaffdog`ディレクトリに md ファイル作成する
+
+例： https://github.com/kagomen/storybook-practice/blob/main/.scaffdog/create-component-file.md
