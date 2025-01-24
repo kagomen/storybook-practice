@@ -37,7 +37,7 @@ npx storybook@latest init
 
 ```
 npm config set legacy-peer-deps true --location project
-npm storybook@latest init
+npx storybook@latest init
 ```
 
 #### setup
@@ -111,3 +111,13 @@ npx scaffdog init
 `.scaffdog`ディレクトリに md ファイル作成する
 
 例： https://github.com/kagomen/storybook-practice/blob/main/.scaffdog/create-component-file.md
+
+### Plop
+
+```
+npm i -D plop
+```
+
+root に`plopfile.mjs`作成
+
+ref: https://zenn.dev/counterworks/articles/plop-template
